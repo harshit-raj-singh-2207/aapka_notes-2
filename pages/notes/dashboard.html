@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Aapka Notes</title>
+
+  <!-- CORRECT CSS PATH -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-flex">
+    <h1 class="logo">Aapka<span>Notes</span></h1>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="notes/notes.html">Notes</a></li>
+        <li><a href="pyq/pyq.html">PYQs</a></li>
+        <li><a href="important/important.html">Important</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+  <div class="container">
+
+    <h2 class="section-title">Dashboard</h2>
+    <p style="text-align:center; color:#666; margin-bottom:40px;">
+      Your central hub for exam preparation
+    </p>
+
+    <div class="dashboard-grid">
+      <a href="notes/notes.html" class="dashboard-card">
+        📘 Semester Notes
+      </a>
+
+      <a href="pyq/pyq.html" class="dashboard-card">
+        📄 Previous Year Questions
+      </a>
+
+      <a href="important/important.html" class="dashboard-card">
+        ⭐ Important Topics (AI)
+      </a>
+
+      <a href="#" class="dashboard-card">
+        🤖 AI Assistant
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- AI CHAT -->
+<div class="ai-chat">
+  <button class="ai-btn">🤖</button>
+
+  <div class="ai-box">
+    <div class="ai-header">Aapka AI</div>
+    <div class="ai-messages">
+      <div class="ai-msg bot">Hi! Ask me anything related to exams 📘</div>
+    </div>
+    <div class="ai-input">
+      <input type="text" placeholder="Ask your doubt..." />
+      <button>Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="../js/main.js"></script>
+<script src="../js/gemini.js"></script>
+
+</body>
+</html>
