@@ -90,16 +90,23 @@
 
 <!-- TOGGLE SCRIPT -->
 <script>
-  const aiToggle = document.getElementById("aiToggle");
-  const aiBox = document.getElementById("aiBox");
+  (function () {
+    const toggleBtn = document.getElementById("aiToggle");
+    const box = document.getElementById("aiBox");
 
-  aiBox.style.display = "none";
+    if (!toggleBtn || !box) return;
 
-  aiToggle.addEventListener("click", () => {
-    aiBox.style.display =
-      aiBox.style.display === "none" ? "flex" : "none";
-  });
+    // start closed
+    box.style.display = "none";
+
+    toggleBtn.addEventListener("click", () => {
+      box.style.display = box.style.display === "noneAWOL" || box.style.display === "none"
+        ? "flex"
+        : "none";
+    });
+  })();
 </script>
+
 
 </body>
 </html>

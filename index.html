@@ -1,142 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aapka Notes | Exam Resources Made Easy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aapka Notes</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<header class="navbar">
-    <div class="container nav-flex">
-        <h1 class="logo">Aapka<span>Notes</span></h1>
+<nav class="navbar">
+  <div class="container nav-flex">
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/notes/notes.html">Notes</a></li>
-                <li><a href="pages/pyq/pyq.html">PYQs</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="pages/important/important.html">Important</a></li>
-            </ul>
-        </nav>
+    <div class="logo">Aapka<span>Notes</span></div>
 
-        <div class="nav-btns">
-            <a href="login.html" class="btn-outline">Login</a>
-            <a href="register.html" class="btn">Register</a>
-        </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="pages/dashboard.html">Dashboard</a></li>
+      <li><a href="pages/notes/notes.html">Notes</a></li>
+      <li><a href="pages/pyq/pyq.html">PYQs</a></li>
+      <li><a href="pages/important/important.html">Important</a></li>
+    </ul>
+
+    <div class="nav-btns">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="register.html" class="btn">Get Started</a>
     </div>
-</header>
 
-<!-- ================= HERO SECTION ================= -->
+    <div class="nav-toggle">☰</div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
 <section class="hero">
-    <div class="container hero-grid">
+  <div class="container hero-grid">
 
-        <div class="hero-text">
-            <h1>
-                Your <span class="highlight">Exam Partner</span><br>
-                For Every Semester
-            </h1>
+    <div class="hero-text">
+      <h1>
+        Study Smart.  
+        Score <span class="highlight">Top Grades</span>  
+        Without Stress.
+      </h1>
 
-            <p>
-                Access semester-wise notes, PYQs, subject resources,  
-                and AI-powered exam help — all in one place.
-            </p>
+      <p>
+        One platform for all your semester notes, PYQs, important questions 
+        and AI-powered doubt solving. Built for students who want results.
+      </p>
 
-            <div class="hero-buttons">
-                <a href="pages/dashboard.html" class="btn">Get Started</a>
-                <a href="#features" class="btn-outline">Explore Features</a>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <h3>Quick Access</h3>
-
-            <a href="pages/notes/notes.html" class="quick-link">📘 Semester Notes</a>
-            <a href="pages/pyq/pyq.html" class="quick-link">📄 Previous Year Questions</a>
-            <a href="subjects.html" class="quick-link">📄 Subjects</a>
-            <a href="pages/important/important.html" class="quick-link">⭐ Important Topics</a>
-        </div>
-
+      <div class="hero-buttons">
+        <a href="pages/dashboard.html" class="btn">Open Dashboard</a>
+        <a href="#features" class="btn-outline">Explore Features</a>
+      </div>
     </div>
+
+    <!-- Quick Access Card -->
+    <div class="hero-card">
+      <h3>⚡ Quick Access</h3>
+
+      <a href="pages/notes/notes.html" class="quick-link">📚 Semester Notes</a>
+      <a href="pages/pyq/pyq.html" class="quick-link">📝 Previous Year Papers</a>
+      <a href="pages/important/important.html" class="quick-link">⭐ Important Questions</a>
+    </div>
+
+  </div>
 </section>
 
 <!-- ================= FEATURES ================= -->
 <section class="features" id="features">
-    <div class="container">
-        <h2 class="section-title">Why Choose Aapka Notes?</h2>
+  <div class="container">
 
-        <div class="feature-grid">
+    <h2 class="section-title">Everything You Need Before Exams</h2>
 
-            <div class="feature-card">
-                <h3>📘 Semester-wise Notes</h3>
-                <p>
-                    Organized notes for all 8 semesters,
-                    easy to navigate and exam focused.
-                </p>
-            </div>
+    <div class="feature-grid">
 
-            <div class="feature-card">
-                <h3>📄 PYQs</h3>
-                <p>
-                    Previous year questions to understand
-                    patterns and scoring topics.
-                </p>
-            </div>
+      <div class="feature-card">
+        <h3>📚 Semester Notes</h3>
+        <p>Well structured notes for every subject and semester. No more searching everywhere.</p>
+      </div>
 
-            <div class="feature-card">
-                <h3>🔍 Smart Search</h3>
-                <p>
-                    Quickly find topics, subjects, and
-                    questions using filters.
-                </p>
-            </div>
+      <div class="feature-card">
+        <h3>📝 PYQs Collection</h3>
+        <p>Previous year papers with important repeated questions to help you score better.</p>
+      </div>
 
-            <div class="feature-card">
-                <h3>🤖 AI Assistance</h3>
-                <p>
-                    Ask doubts, get summaries, and
-                    important exam questions using AI.
-                </p>
-            </div>
+      <div class="feature-card">
+        <h3>⭐ Important Topics</h3>
+        <p>Focus only on what matters in exams. High scoring important questions.</p>
+      </div>
 
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <!-- ================= CTA ================= -->
 <section class="cta">
-    <div class="container cta-box">
-        <h2>Study Smarter, Not Harder</h2>
-        <p>
-            Join thousands of students preparing smarter
-            with Aapka Notes.
-        </p>
-        <a href="register.html" class="btn">Create Free Account</a>
+  <div class="container">
+    <div class="cta-box">
+      <h2>Your Entire Semester. One Smart Platform.</h2>
+      <p>Stop wasting time searching for notes. Start studying smart.</p>
+      <a href="register.html" class="btn">Start Studying Now</a>
     </div>
+  </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-    <div class="container footer-flex">
-        <p>© 2026 Aapka Notes. All Rights Reserved.</p>
+  <div class="container footer-flex">
+    <p>© 2026 Aapka Notes. All rights reserved.</p>
 
-        <div class="footer-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
-        </div>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
     </div>
+  </div>
 </footer>
 
-<!-- JS -->
-<script src="js/main.js"></script>
+<!-- ================= AI CHAT BUTTON ================= -->
+<div class="ai-chat">
+  <button class="ai-btn" onclick="toggleAI()">🤖</button>
+
+  <div class="ai-box" id="aiBox" style="display:none;">
+    <div class="ai-header">
+      Aapka AI
+      <span onclick="toggleAI()" style="cursor:pointer;">✖</span>
+    </div>
+
+    <div class="ai-messages" id="aiMessages">
+      <div class="ai-msg bot">Hi 👋 Ask me any study doubt.</div>
+    </div>
+
+    <div class="ai-input">
+      <input type="text" id="aiInput" placeholder="Ask something...">
+      <button onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= JS ================= -->
+<script>
+const toggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".nav-links");
+
+toggle.onclick = () => {
+  links.classList.toggle("show");
+};
+
+function toggleAI(){
+  const box = document.getElementById("aiBox");
+  box.style.display = box.style.display === "none" ? "flex" : "none";
+}
+
+function sendMsg(){
+  const input = document.getElementById("aiInput");
+  const msg = input.value.trim();
+  if(!msg) return;
+
+  const container = document.getElementById("aiMessages");
+
+  container.innerHTML += `<div class="ai-msg user">${msg}</div>`;
+  container.innerHTML += `<div class="ai-msg bot">Thinking...</div>`;
+
+  input.value="";
+  container.scrollTop = container.scrollHeight;
+}
+</script>
+
 </body>
 </html>

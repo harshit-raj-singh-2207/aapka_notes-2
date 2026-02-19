@@ -18,6 +18,7 @@
     <nav>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
+        
         <li><a href="notes/notes.html">Notes</a></li>
         <li><a href="pyq/pyq.html">PYQs</a></li>
         <li><a href="important/important.html">Important</a></li>
@@ -59,9 +60,9 @@
 
 <!-- AI CHAT -->
 <div class="ai-chat">
-  <button class="ai-btn">🤖</button>
+  <button class="ai-btn" id="aiToggle">🤖</button>
 
-  <div class="ai-box">
+  <div class="ai-box" id="aiBox">
     <div class="ai-header">Aapka AI</div>
     <div class="ai-messages">
       <div class="ai-msg bot">Hi! Ask me anything related to exams 📘</div>
@@ -73,9 +74,24 @@
   </div>
 </div>
 
+
 <!-- JS -->
-<script src="../js/main.js"></script>
-<script src="../js/gemini.js"></script>
+<script>
+  (function () {
+    const toggleBtn = document.getElementById("aiToggle");
+    const box = document.getElementById("aiBox");
+
+    if (!toggleBtn || !box) return;
+
+    box.style.display = "none";
+
+    toggleBtn.addEventListener("click", () => {
+      box.style.display =
+        box.style.display === "none" ? "flex" : "none";
+    });
+  })();
+</script>
+
 
 </body>
 </html>
