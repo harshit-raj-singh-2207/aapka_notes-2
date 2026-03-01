@@ -6,6 +6,7 @@
   <title>Important Topics (AI) | Aapka Notes</title>
   <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -17,6 +18,7 @@
       <ul class="nav-links">
         <li><a href="../dashboard.html">Dashboard</a></li>
         <li><a href="../notes/notes.html">Notes</a></li>
+        <li><a href="../subjects.html">Subjects</a></li>
         <li><a href="../pyq/pyq.html">PYQs</a></li>
         <li><a href="../../index.html">Home</a></li>
       </ul>
@@ -35,6 +37,7 @@
 
     <!-- INPUT FORM -->
     <div class="stats-grid">
+
       <div class="dashboard-card">
         <label>Subject</label>
         <input id="subjectInput" type="text" placeholder="e.g. Data Structures">
@@ -45,12 +48,9 @@
         <input id="semesterInput" type="text" placeholder="e.g. Semester 3">
       </div>
 
-      <div class="dashboard-card">
-        <label>Exam Type</label>
-        <input id="examInput" type="text" placeholder="Mid / End / University">
-      </div>
     </div>
 
+    <!-- BUTTON -->
     <div style="text-align:center; margin-top:30px;">
       <button class="btn" onclick="generateTopics()">
         Generate Important Topics
@@ -63,50 +63,30 @@
   </div>
 </section>
 
-<!-- AI ASSISTANT (RETRACTABLE) -->
-<div class="ai-chat">
-  <button class="ai-btn" id="aiToggle">🤖</button>
-
-  <div class="ai-box" id="aiBox">
-    <div class="ai-header">Aapka AI Assistant</div>
-
-    <div class="ai-messages">
-      <div class="ai-msg bot">
-        Hi! Ask me anything related to exams 📘
-      </div>
-    </div>
-
-    <div class="ai-input">
-      <input type="text" placeholder="Ask your doubt..." />
-      <button>Send</button>
-    </div>
-  </div>
-</div>
-
-<!-- JS -->
+<!-- JS FILES -->
 <script src="../../js/main.js"></script>
 <script src="../../js/gemini.js"></script>
 <script src="../../js/important.js"></script>
 
 <!-- TOGGLE SCRIPT -->
 <script>
-  (function () {
-    const toggleBtn = document.getElementById("aiToggle");
-    const box = document.getElementById("aiBox");
+(function () {
+  const toggleBtn = document.getElementById("aiToggle");
+  const box = document.getElementById("aiBox");
 
-    if (!toggleBtn || !box) return;
+  if (!toggleBtn || !box) return;
 
-    // start closed
-    box.style.display = "none";
+  box.style.display = "none";
 
-    toggleBtn.addEventListener("click", () => {
-      box.style.display = box.style.display === "noneAWOL" || box.style.display === "none"
-        ? "flex"
-        : "none";
-    });
-  })();
+  toggleBtn.addEventListener("click", () => {
+    if (box.style.display === "none") {
+      box.style.display = "flex";
+    } else {
+      box.style.display = "none";
+    }
+  });
+})();
 </script>
-
 
 </body>
 </html>
